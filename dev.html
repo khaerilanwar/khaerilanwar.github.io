@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Khaeril Anwar</title>
+
+    <!--- favicon-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/resume.ico"
+      type="image/x-icon"
+    />
+
+    <!--- custom css link-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/anwar.jpg"
+              alt="Khaeril Anwar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Muhammad Khaeril Anwar">
+              Muhammad Khaeril Anwar
+            </h1>
+
+            <p class="title">Web Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info" style="overflow-wrap: break-word">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:khaerilanwar1992@gmail.com"
+                  class="contact-link"
+                  title="khaerilanwar1992@gmail.com"
+                  >khaerilanwar1992@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Tanggal Lahir</p>
+
+                <time datetime="2002-09-19">19 September 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Lokasi</p>
+
+                <address>Brebes, Jawa Tengah, Indonesia</address>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Unduh CV</p>
+
+                <a
+                  href="https://drive.google.com/file/d/13Lr8g_9UFZai-oLYjwY1K8qhSicoe8zR/view?usp=sharing"
+                  class="contact-link"
+                  >Download</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/muhammad-khaeril-anwar-09a538227/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/khaerilanwr_/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://web.facebook.com/saryat.saryat/"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/khaerilanwar" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.youtube.com/channel/UCobKryu4ZwDlKOOqw-lPjUA"
+                class="social-link"
+              >
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link="about">
+                About
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="resume">Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="portfolio">
+                Portfolio
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="blog">Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="contact">
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="infografis active" data-page="infografis">
+          <header>
+            <h2 class="h2 article-title">Web Development</h2>
+          </header>
+
+          <section class="projects">
+            <h2 class="title-portfolio">Infografis Kabupaten Brebes</h2>
+
+            <div class="parent-img-title">
+              <img
+                class="img-title"
+                src="assets/images/portfolio/infografis original.png"
+                alt=""
+              />
+            </div>
+
+            <div class="desc-text">
+              <p>
+                Author membuat website untuk kebutuhan
+                <b>Visualisasi Data Kabupaten Brebes</b> yang nantinya akan
+                digunakan oleh
+                <b
+                  >Dinas Komunikasi Informatika dan Statistik Kabupaten
+                  Brebes</b
+                >. Website digunakan untuk memudahkan orang-orang mengakses
+                <b>Rangkuman Data</b> yang ada di Kabupaten Brebes.
+              </p>
+
+              <p>
+                Website ini dibangun hanya dengan menggunakan
+                <b>HTML, CSS dan JavaScript</b> saja. Bisa dibilang website ini
+                termasuk <b>web statis</b> tapi untuk data yang disajikan bisa
+                terbilang <b>dinamis</b> karena Author menggunakan
+                <b>Realtime Database</b> untuk menyimpan data-data yang akan
+                divisualisasikan.
+              </p>
+
+              <h2 style="margin-bottom: 3px">
+                Fitur Infografis Kabupaten Brebes
+              </h2>
+
+              <p style="margin-bottom: 5px">
+                Beberapa fitur yang disediakan oleh Infografis Kabupaten Brebes
+                yaitu :
+              </p>
+              <ol>
+                <li>
+                  <h3>1. Visualisasi Data</h3>
+                  <p>
+                    Author berusaha mungkin memberikan
+                    <b>Visualisasi Data</b> yang mudah dipahami oleh semua
+                    kalangan masyarakat. Author menyajikan dalam berbagai
+                    <b>bentuk diagram</b> dan <b>ringkasan data</b>.
+                  </p>
+                </li>
+                <li>
+                  <h3>2. Manipulasi Data Realtime</h3>
+                  <p>
+                    Author juga membuat fitur untuk memanipulasi data seperti
+                    <b>membaca data</b>, <b>menambahkan data</b>,
+                    <b>mengubah data</b> dan <b>menghapus data</b>. Ini
+                    bertujuan ketika ada penginputan yang salah, Admin yang
+                    mengelola website tersebut bisa membenarkan data yang akan
+                    disajikan.
+                  </p>
+                </li>
+              </ol>
+
+              <h2 style="margin-bottom: 3px">
+                Teknologi Infografis Kabupaten Brebes
+              </h2>
+              <p style="margin-bottom: 5px">
+                Website <b>Infografis Kabupaten Brebes</b> tidak terlepas dengan
+                yang namanya teknologi yang dibutuhkan, berikut beberapa
+                teknologi yang dibutuhkan dalam membuat
+                <b>website infografis</b> :
+              </p>
+              <ul class="list-tech">
+                <li>
+                  <a
+                    href="https://getbootstrap.com/"
+                    target="_blank"
+                    style="color: lightblue"
+                    >BootStrap</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://apexcharts.com/"
+                    target="_blank"
+                    style="color: lightblue"
+                    >ApexCharts.js</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://firebase.google.com/"
+                    target="_blank"
+                    style="color: lightblue"
+                    >Firebase Hosting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://firebase.google.com/"
+                    target="_blank"
+                    style="color: lightblue"
+                    >Firebase Realtime Database</a
+                  >
+                </li>
+              </ul>
+              <p style="margin-top: 15px; margin-bottom: 1.5rem">
+                Jadi itulah penjelasan singkat seputar aplikasi
+                <b>Infografis Kabupaten Brebes</b>.
+              </p>
+
+              <a class="visit-button" href="https://infografis-kominfo.web.app/"
+                >Kunjungi <b>Infografis Kabupaten Brebes</b></a
+              >
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--- custom js link-->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--- ionicon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
