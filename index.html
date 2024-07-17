@@ -239,7 +239,7 @@
                 <h4 class="h4 service-item-title">Web development</h4>
 
                 <p class="service-item-text">
-                  Pembuatan aplikasi web yang dibangun dengan bahasa PHP
+                  Pembuatan aplikasi web yang dibangun dengan PHP dan JavaScript
                 </p>
               </div>
             </li>
@@ -596,6 +596,17 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">PT Stechoq Robotika Indonesia</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Sebagai Backend Developer dalam pembuatan sistem manajemen gudang (Warehouse Management System) yang
+                dibangun dengan bahasa pemrograman JavaScript.
+              </p>
+            </li>
+
+            <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Dinas Komunikasi Informatika dan Statistik Kabupaten Brebes</h4>
 
               <span>2023</span>
@@ -674,12 +685,23 @@
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">HTML, CSS, JavaScript</h5>
+                <h5 class="h5">JavaScript</h5>
                 <data value="88">88%</data>
               </div>
 
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 88%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">TailwindCSS</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%"></div>
               </div>
             </li>
 
@@ -698,6 +720,17 @@
               <div class="title-wrapper">
                 <h5 class="h5">MySQL</h5>
                 <data value="92">92%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 92%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">MongoDB</h5>
+                <data value="87">87%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -819,13 +852,29 @@
 
           <ul class="project-list">
             <li class="project-item active" data-filter-item data-category="web development">
+              <button data-nav-link="gaptech">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio/gaptech.png" alt="gaptech wms" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Gaptech WMS</h3>
+
+                <p class="project-category">Web development</p>
+              </button>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
               <button data-nav-link="halonotes">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/portfolio/halo notes.png" alt="finance" loading="lazy" />
+                  <img src="./assets/images/portfolio/halo notes.png" alt="halo notes" loading="lazy" />
                 </figure>
 
                 <h3 class="project-title">Halo Notes!</h3>
@@ -1144,6 +1193,164 @@
             </p>
 
             <a class="visit-button" href="https://notesfa.000webhostapp.com/">Kunjungi <b>Halo Notes!</b></a>
+          </div>
+        </section>
+      </article>
+
+      <article class="gaptech" data-page="gaptech">
+        <header>
+          <h2 class="h2 article-title">Web Development</h2>
+        </header>
+
+        <section class="projects">
+          <h2 class="title-portfolio">Gaptech WMS</h2>
+
+          <div class="parent-img-title">
+            <img class="img-title" src="assets/images/portfolio/gaptech ori.png" alt="" />
+          </div>
+
+          <div class="desc-text">
+            <p>
+              Author adalah seorang Backend Developer di PT
+              Stechoq Robotika Indonesia. Pada perusahaan tersebut, Author
+              bertugas dalam pembuatan sistem manajemen gudang (Warehouse
+              Management System) yang dibangun dengan bahasa pemrograman
+              JavaScript.
+            </p>
+            <p>
+              Sistem manajemen gudang yang dibuat oleh Author diberi nama
+              <b>Gaptech WMS</b>. Sistem ini dibuat untuk memudahkan pengguna
+              dalam melakukan pencatatan barang masuk dan keluar, serta
+              memudahkan pengguna dalam melakukan pencarian barang yang
+              dibutuhkan.
+            </p>
+            <p>
+              Selama pembuatan sistem manajemen gudang <b>Gaptech WMS</b>, Author tidak bekerja sendirian. Author
+              dibantu dengan tim yang berperan sebagai Frontend Developer untuk pembuatan antarmuka aplikasi yang
+              menggunakan framework Vue.js dengan bantuan TailwindCSS. Sebelum memulai pengembangan aplikasi, Author dan
+              tim melakukan analisa
+              terhadap sistem yang akan dibuat.
+            </p>
+            <p>
+              Sistem manajemen gudang <b>Gaptech WMS</b> sendiri dibangun dengan menggunakan teknologi yang
+              dibutuhkan, seperti <b>Node.js</b> sebagai runtime JavaScript, <b>Express.js</b> sebagai framework
+              backend, <b>MongoDB</b> sebagai database, dan <b>Mongoose</b> sebagai ODM (Object Data Modelling).
+            </p>
+            <p>
+              Cara kerja WMS Gaptech yaitu menggunakan <b>API</b> yang dibuat oleh Author, dimana API tersebut berfungsi
+              untuk menghubungkan antara Frontend dengan Backend. Ketika pengguna melakukan aksi seperti <b>Input
+                Data</b>, <b>Edit Data</b>, <b>Delete Data</b>, dan <b>Search Data</b>, maka Frontend akan mengirimkan
+              request ke Backend melalui API yang sudah dibuat oleh Author. Setelah itu, Backend akan melakukan proses
+              sesuai dengan request yang diterima, apakah itu <b>Input Data</b>, <b>Edit Data</b>, <b>Delete Data</b>,
+              atau <b>Search Data</b>. Setelah proses selesai, Backend akan mengirimkan response ke Frontend, dan
+              Frontend akan menampilkan data yang sudah diolah oleh Backend.
+            </p>
+
+            <h2 style="margin-bottom: 3px">Fitur WMS Gaptech</h2>
+
+            <p style="margin-bottom: 5px">
+              Beberapa fitur yang disediakan oleh WMS Gaptech yaitu :
+            </p>
+            <ol>
+              <li>
+                <h3>1. Dashboard</h3>
+                <p>
+                  Pada halaman Dashboard sendiri ditampilkan visualisasi data berupa diagram batang yang menampilkan
+                  perbandingan antara barang masuk dan barang keluar selama 1 tahun. Bukan hanya itu, disediakan juga
+                  ringkasan dari aktifitas operasional dalam gudang dan barang yang stoknya sudah menipis.
+                </p>
+              </li>
+              <li>
+                <h3>2. Produk</h3>
+                <p>
+                  Pada menu produk disediakan tampilan data produk yang ada di gudang, seperti <b>Kode Produk</b>,
+                  <b>Nama Produk</b>, <b>Posisi Rak Penyimpanan</b>, <b>Harga Produk</b>, dan juga <b>Stok Produk</b>.
+                  Di halaman ini juga admin bisa melakukan pencarian data produk yang diinginkan dan pada tiap data
+                  produk juga disediakan tombol untuk melakukan <b>Edit Data</b>, <b>Tambah Stok Produk</b> dan <b>Hapus
+                    Data</b>. Selain itu, pada menu produk ini admin bisa menambahkan data produk baru ke dalam sistem
+                  WMS.
+                </p>
+              </li>
+              <li>
+                <h3>3. Transaksi</h3>
+                <p>
+                  Pada menu transaksi disediakan daftar transaksi yang terjadi dalam gudang. Disini admin gudang bisa
+                  melihat transaksi apa saja yang terjadi beserta status transaksi tersebut. Di tiap transaksi admin
+                  gudang bisa melihat detil transaksi dan mengubah status transaksi tersebut menjadi <b>Selesai</b> atau
+                  <b>Dibatalkan</b>. Kemudian admin bisa melakukan penambahan transaksi baru ke dalam sistem WMS.
+                </p>
+              </li>
+              <li>
+                <h3>4. Status Rak</h3>
+                <p>
+                  Menu status rak ini untuk memudahkan admin gudang dalam mengelola penyimpanan dalam gudang. Admin bisa
+                  melihat status rak yang ada di gudang, apakah rak tersebut sudah terisi, penuh atau kosong. Jika rak
+                  sudah terisi, maka admin bisa melihat produk apa yang tersimpan di rak tersebut. Admin juga bisa
+                  melakukan pencarian rak yang diinginkan dan mengubah kapasitas dari rak tersebut.
+                </p>
+              </li>
+              <li>
+                <h3>5. Riwayat</h3>
+                <p>
+                  Menu riwayat ini berisi daftar riwayat transaksi yang terjadi dalam gudang. Admin bisa melihat riwayat
+                  barang masuk dan keluar, siapa yang melakukan transaksi, dan kapan transaksi tersebut terjadi. Admin
+                  juga bisa melakukan pencarian riwayat transaksi yang diinginkan dengan memasukkan tanggal awal dan
+                  tanggal akhir transaksi. Selain itu, admin juga bisa mengunduh laporan transaksi yang sudah difilter
+                  dalam bentuk file xlsx untuk kebutuhan laporan.
+                </p>
+              </li>
+            </ol>
+
+            <p style="margin-bottom: 0;">
+              Untuk melihat isi aplikasi <b>WMS Gaptech</b>, Anda bisa masuk
+              menggunakan
+            <table>
+              <tr>
+                <td>Email</td>
+                <td style="padding-left: 1.5rem; font-weight: 500;">: admingudang@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td style="padding-left: 1.5rem; font-weight: 500;">: adminku</td>
+              </tr>
+            </table>
+            Akun tersebut adalah akun yang saya buat khusus untuk pengunjung, dengan demikian pengunjung tidak bisa
+            melakukan manipulasi data pada web WMS Gaptech.
+            </p>
+
+            <h2 style="margin-bottom: 3px">Teknologi WMS Gaptech</h2>
+            <p style="margin-bottom: 5px">
+              Aplikasi <b>WMS Gaptech</b> tidak terlepas dengan yang namanya
+              teknologi yang dibutuhkan, berikut beberapa teknologi yang
+              dibutuhkan dalam membuat sistem manajemen gudang <b>WMS Gaptech</b>
+            </p>
+            <ul class="list-tech">
+              <li>
+                <a href="https://nodejs.org/" target="_blank" style="color: lightblue">NodeJS</a>
+              </li>
+              <li>
+                <a href="https://www.mongodb.com/" target="_blank" style="color: lightblue">MongoDB Database</a>
+              </li>
+              <li>
+                <a href="https://vuejs.org/" target="_blank" style="color: lightblue">Vue.JS</a>
+              </li>
+              <li>
+                <a href="https://tailwindcss.com/" target="_blank" style="color: lightblue">TailwindCSS</a>
+              </li>
+              <li>
+                <a href="https://www.heroku.com/" target="_blank" style="color: lightblue">Heroku</a>
+              </li>
+              <li>
+                <a href="https://vercel.com/" target="_blank" style="color: lightblue">Vercel</a>
+              </li>
+            </ul>
+            <p style="margin-top: 15px; margin-bottom: 1.5rem;">
+              Jadi itulah penjelasan singkat seputar aplikasi
+              <b>WMS Gaptech</b>.
+            </p>
+
+            <a class="visit-button" target="_blank" href="https://wms-gaptech.vercel.app/login">Kunjungi <b>WMS
+                Gaptech</b></a>
           </div>
         </section>
       </article>
