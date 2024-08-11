@@ -1,7 +1,7 @@
 'use strict';
 
 const webDev = "Web Developer";
-const mlDev = "Machine Learning Developer";
+const mlDev = "Software Engineer";
 
 function changeTitle() {
   const title = document.querySelector("p.title");
@@ -169,7 +169,7 @@ const navbarPortfolio = document.querySelector('button[data-nav-link="portfolio"
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    const portfolio = ['halonotes', 'tecation', 'infografis', 'scraping-bayi', 'gaptech'];
+    const portfolio = ['halonotes', 'tecation', 'infografis', 'scraping-bayi', 'gaptech', 'notemail'];
     for (let i = 0; i < pages.length; i++) {
       if (this.getAttribute('data-nav-link') === pages[i].dataset.page) {
         if (portfolio.includes(this.getAttribute('data-nav-link'))) {
