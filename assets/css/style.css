@@ -177,6 +177,16 @@ article {
   margin: 16px 0;
 }
 
+.kredensial {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-kredensial {
+  flex: 1;
+  padding: 10px;
+}
+
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -1740,6 +1750,10 @@ textarea.form-input::-webkit-resizer {
   .sidebar,
   article {
     width: 700px;
+  }
+
+  .kredensial {
+    flex-direction: row;
   }
 
   .has-scrollbar::-webkit-scrollbar-button {
