@@ -169,7 +169,7 @@ const navbarPortfolio = document.querySelector('button[data-nav-link="portfolio"
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    const portfolio = ['halonotes', 'tecation', 'infografis', 'scraping-bayi', 'gaptech', 'notemail', 'histore'];
+    const portfolio = ['halonotes', 'tecation', 'infografis', 'scraping-bayi', 'auto-comment-fb', 'gaptech', 'notemail', 'histore'];
     for (let i = 0; i < pages.length; i++) {
       if (this.getAttribute('data-nav-link') === pages[i].dataset.page) {
         if (portfolio.includes(this.getAttribute('data-nav-link'))) {
@@ -203,7 +203,7 @@ formButton.addEventListener("click", function () {
   // Prepare for request HTTP
   const Http = new XMLHttpRequest();
   let data = new FormData();
-  const url = "https://halokak.pythonanywhere.com/sendemail";
+  const url = "https://notemail-server.vercel.app/contact/email";
 
   // OPEN REQUEST POST HTTP TO REST SERVER
   Http.open("POST", url);
