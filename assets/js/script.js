@@ -217,7 +217,7 @@ formButton.addEventListener("click", async function () {
   loading.style.visibility = "visible";
 
   try {
-    const response = await fetch("http://localhost:3000/contact/email", {
+    const response = await fetch("https://notemail-server.vercel.app/contact/email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
