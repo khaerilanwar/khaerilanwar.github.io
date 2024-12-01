@@ -193,33 +193,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // Script for send message for me
 const formButton = document.querySelector(".form-btn");
 
-formButton.addEventListener("click", function () {
-  // GET DATA
-  const fullname = document.querySelector("input[name='fullname']").value;
-  const email = document.querySelector("input[name='email']").value;
-  const message = document.querySelector("textarea[name='message']").value;
-
-  // REST SERVER FOR SEND EMAIL
-  // Prepare for request HTTP
-  const Http = new XMLHttpRequest();
-  let data = new FormData();
-  const url = "https://notemail-server.vercel.app/contact/email";
-
-  // OPEN REQUEST POST HTTP TO REST SERVER
-  Http.open("POST", url);
-
-  // ADD DATA TO REST SERVER FOR SEND EMAIL
-  data.append("fullname", fullname);
-  data.append("email", email);
-  data.append("message", message);
-
-  // SEND DATA TO REST SERVER
-  Http.send(data);
-
-  Http.onreadystatechange = (e) => {
-    console.log(Http.responseText)
-  }
-
+formButton.addEventListener("click", async function () {
   // FEEDBACK MESSAGE SENT
   const Toast = Swal.mixin({
     toast: true,
@@ -233,10 +207,44 @@ formButton.addEventListener("click", function () {
     }
   })
 
-  Toast.fire({
-    icon: 'success',
-    title: 'Pesan terkirim!'
-  });
+  // GET DATA
+  const fullname = document.querySelector("input[name='fullname']").value;
+  const email = document.querySelector("input[name='email']").value;
+  const message = document.querySelector("textarea[name='message']").value;
+  const loading = document.getElementById("loading");
+
+  // LOADING BUTTON
+  loading.style.visibility = "visible";
+
+  try {
+    const response = await fetch("http://localhost:3000/contact/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        fullname: fullname,
+        email: email,
+        message: message
+      })
+    });
+
+    const result = await response.json();
+    console.log(result);
+    loading.style.visibility = "hidden";
+    Toast.fire({
+      icon: 'success',
+      title: 'Pesan terkirim!'
+    });
+
+  } catch (error) {
+    console.error(error);
+    loading.style.visibility = "hidden";
+    Toast.fire({
+      icon: 'error',
+      title: 'Gagal mengirim pesan!'
+    });
+  }
 
   // CLEAR FORM INPUT
   document.querySelector("input[name='fullname']").value = "";
